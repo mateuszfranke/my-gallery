@@ -11,7 +11,6 @@ body{
     grid-template-rows: 2fr 4fr 1fr;
     padding: 2rem;
     margin: 0;
-    justify-content: center;
 }
 
 .designer{
@@ -38,6 +37,8 @@ body{
 }
 .designer__statistics{
     display: flex;
+    width: fit-content;
+    margin: 0 auto;
 }
 .designer__statistics-box{
     background-color: #E5E5E5;
@@ -56,4 +57,54 @@ body{
 .designer__statistics-number{
     font-size: 1rem;
     margin: 0 0 0.2rem 0;
+}
+
+.portfolio-images{
+    display: grid;
+    grid-template-areas:
+    "img1 img2 img2"
+    "img3 img3 img4"
+    "img5 img6 img4";
+    padding: 2rem;
+
+}
+.portfolio-images > div {
+    margin: 0.5rem;
+    background-size: cover;
+}
+
+.portfolio-image__1{
+    grid-area: img1;
+    background-image: url("images/bedroom-416062_1280.jpg");
+}
+.portfolio-image__2{
+    grid-area: img2;
+    background-image: url("images/brick-wall-1834784_1280.jpg");
+    background-position: center;
+
+}
+.portfolio-image__3{
+    grid-area: img3;
+    background-image: url("images/chairs-2181947_1280.jpg");
+    background-position: center;
+
+
+}
+.portfolio-image__4{
+    grid-area: img4;
+    background-image: url("images/chairs-2181960_1280.jpg");
+
+
+}
+.portfolio-image__5{
+    grid-area: img5;
+    background-image: url("images/furniture-998265_1280.jpg");
+}
+.portfolio-image__6{
+    grid-area: img6;
+    background-image: url("images/chairs-2181968_1280.jpg");
+}
+
+.footer{
+    text-align: center;
 }
