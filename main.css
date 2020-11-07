@@ -8,9 +8,10 @@
 body{
     background: white;
     display: grid;
-    grid-template-rows: 2fr 4fr 1fr;
+    grid-template-rows: 1fr 10fr 0.5fr;
     padding: 2rem;
     margin: 0;
+    height: 100vh;
 }
 
 .designer{
@@ -21,41 +22,44 @@ body{
     border-radius: 35%;
     background-size: cover;
     background-position: right;
-    height: 8rem;
-    width: 8rem;
+    height: 6rem;
+    width: 6rem;
     margin: 0.5rem auto;
 }
 .designer__name{
     color:#4E5150;
-    font-size: 1.8rem;
+    font-size: 0.8rem;
     margin: 0;
     font-weight: bold;
 }
 .designer__location{
     color: #A9A9A9;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    margin: 0;
+    padding: 0.3rem;
+
 }
 .designer__statistics{
     display: flex;
-    width: fit-content;
+    width: max-content;
     margin: 0 auto;
 }
 .designer__statistics-box{
     background-color: #E5E5E5;
     border-radius: 1rem;
     color: #4E5150;
-    min-width: 5rem;
+    min-width: 4rem;
     text-align: center;
-    padding: 0.8rem;
+    padding: 0.2rem;
     font-weight: bold;
     margin: 0 0.5rem;
 }
 .designer__statistics-label{
-    font-size: 0.6rem;
+    font-size: 0.3rem;
     margin: 0;
 }
 .designer__statistics-number{
-    font-size: 1rem;
+    font-size: 0.6rem;
     margin: 0 0 0.2rem 0;
 }
 
@@ -65,12 +69,14 @@ body{
     "img1 img2 img2"
     "img3 img3 img4"
     "img5 img6 img4";
-    padding: 2rem;
+    padding: 0.5rem 8rem;
 
 }
 .portfolio-images > div {
     margin: 0.5rem;
     background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem #888888;
 }
 
 .portfolio-image__1{
@@ -107,4 +113,22 @@ body{
 
 .footer{
     text-align: center;
+    color: #A9A9A9;
+    font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        grid-template-rows: 3fr 7fr 0.5fr !important;
+    }
+    .portfolio-images{
+        padding: 0.5rem 0.5rem;
+    }
+    .designer__name{
+        font-size: 1.5rem;
+    }
+    .designer__photo{
+        height: 8rem;
+        width: 8rem;
+    }
 }
